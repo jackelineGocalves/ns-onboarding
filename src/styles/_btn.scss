@@ -1,0 +1,140 @@
+.btn {
+    @extend .rounded-pill;
+    
+    padding: rem(10px) rem(24px);
+    font-weight: $font-weight-btn;
+    font-size: $font-size-btn;
+    line-height: $line-height-btn;
+
+    &.small {
+        padding: rem(8px) rem(16px);
+    }
+    
+    &.btn-primary {
+        background-color: $primary-900;
+        color: $white;
+        border: 2px solid $primary-900;
+
+        svg path {
+            stroke: $white;
+        }
+
+        &:hover {
+            background-color: $primary-800;
+            border: 2px solid $primary-800;
+        }
+
+        &:active {
+            background-color: $primary-700;
+            border: 2px solid $primary-700;
+            color: $white;
+        }
+
+        &.disabled,
+        &:disabled {
+            opacity: 50%;
+            background-color: $primary-900;
+            border: 2px solid $primary-900;
+        }
+    }
+
+    &.btn-secondary {
+        border: 2px solid $primary-900;
+        color: $primary-900;
+        background-color: transparent;
+
+        svg path {
+            stroke: $primary-900;
+        }
+
+        &:hover {
+            background-color: $primary-900;
+            border: 2px solid $primary-900;
+            color: $white;
+ 
+            svg path {
+                stroke: $white;
+            }
+        }
+
+        &:first-child:active {
+            background-color: $primary-800;
+            border: 2px solid $primary-800;
+        }
+
+        &.disabled,
+        &:disabled {
+            opacity: 50%;
+            background-color: transparent;
+            color: $primary-900;
+            border: 2px solid $primary-900;
+        }
+    }
+
+    &.btn-basic {
+        padding: rem(8px);
+        color:$primary-800;
+
+        &.lg {
+            padding: rem(8px) rem(16px);
+        }
+
+        &:hover {
+            background-color: $primary-100;
+        }
+
+        &:first-child:active {
+            background-color: $primary-200;
+            border: 1px solid $primary-200 ;
+            color:$primary-800;
+        }
+
+        &.disabled,
+        &:disabled {
+            opacity: 50%;
+            border: none;
+        }
+    }
+    &.btn-danger {
+        background-color: $danger;
+        border: 2px solid $danger;
+        color: $white;
+
+        &:hover {
+            border: 2px solid $danger-600;
+            background-color: $danger-600;
+            color: $white;
+        }
+
+        &:first-child:active {
+            background-color: $danger-700;
+            border: 2px solid $danger-700;  
+        }
+
+        &.disabled,
+        &:disabled {
+            background-color: $danger;
+            opacity: 50%;
+            border: none;
+            color: $white;
+        }
+    }
+}
+
+.icon-btn-size16 {
+    width: rem(16px);
+    height: rem(16px);
+}
+
+@include media-breakpoint-down(sm) {
+
+    .btn.sm {
+        padding: rem(8px) rem(16px);
+        font-weight: $font-weight-btn-rs;
+        font-size: $font-size-btn-rs;
+        line-height: $line-height-btn-rs; 
+    }
+
+}
+
+ 

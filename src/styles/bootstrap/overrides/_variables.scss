@@ -1,0 +1,95 @@
+@import '../../mixins/index';
+
+$enable-dark-mode: false;
+
+//COLORS
+
+$primary: #888A8B;
+$secondary:  #00BC52;  
+$danger: #FF2312;
+$success: #08CA39;
+$warning: #FFC21A;
+$info: #0091F2;
+$white: #FFFFFF;
+$shadow : #10121314;
+$secondary-shadow : #00C76F14;
+
+//FONTS 
+
+$font-weight-h1: 600;
+$font-size-h1: rem(32px);
+$line-height-h1: rem(44px);
+
+$font-weight-h2: 600;
+$font-size-h2: rem(28px);
+$line-height-h2: rem(40px);
+
+$font-weight-h3: 600;
+$font-size-h3: rem(24px);
+$line-height-h3: rem(28px);
+
+$font-weight-h4: 600;
+$font-size-h4: rem(20px);
+$line-height-h4: rem(28px);
+
+$font-weight-h5: 500;
+$font-size-h5: rem(18px);
+$line-height-h5: rem(26px);
+
+$font-weight-btn: 700;
+$font-size-btn: rem(16px);
+$line-height-btn: rem(20px);
+
+$font-weight-body: 400;
+$font-size-body: rem(16px);
+$line-height-body: rem(20px);
+
+$font-weight-link: 500;
+$font-size-link: rem(16px);
+$line-height-link: rem(20px);
+
+$font-weight-caption: 400;
+$font-size-caption: rem(12px);
+$line-height-caption: rem(16px);
+
+//RESPONSIVE 
+
+$font-weight-h1-rs: 600;
+$font-size-h1-rs: rem(28px);
+$line-height-h1-rs: rem(40px);
+
+$font-weight-h2-rs: 600;
+$font-size-h2-rs: rem(24px);
+$line-height-h2-rs: rem(32px);
+
+$font-weight-h3-rs: 600;
+$font-size-h3-rs: rem(20px);
+$line-height-h3-rs: rem(28px);
+
+$font-weight-h4-rs: 600;
+$font-size-h4-rs: rem(18px);
+$line-height-h4-rs: rem(26px);
+
+$font-weight-h5-rs: 500;
+$font-size-h5-rs: rem(16px);
+$line-height-h5-rs: rem(24px);
+
+$font-weight-btn-rs: 700;
+$font-size-btn-rs: rem(18px);
+$line-height-btn-rs: rem(26px);
+
+$font-weight-body-rs: 400;
+$font-size-body-rs: rem(18px);
+$line-height-body-rs: rem(26px);
+
+$font-weight-link-rs: 400;
+$font-size-link-rs: rem(18px);
+$line-height-link-rs: rem(26px);
+
+$font-weight-caption-rs: 400;
+$font-size-caption-rs: rem(16px);
+$line-height-caption-rs: rem(24px);
+
+
+
+

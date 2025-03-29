@@ -1,0 +1,107 @@
+.open-account-container {
+    background-color: $white;
+    border-radius: rem(24px);
+    width: 100%;
+}
+
+.open-account-container-documents-validations {
+    background-color: $primary-800;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(16px);
+    border-radius: rem(16px);
+    background:
+    radial-gradient(circle 164px at 78% 95%,
+        rgba($secondary-500, 0.5),
+        rgba($secondary-600, 0.3),
+        transparent),
+    radial-gradient(circle 164px at 47% 106%,
+        rgba($secondary-500, 0.5),
+        rgba($secondary-600, 0.3),
+        transparent),
+
+    radial-gradient(circle 164px at 78% 95%,
+        rgba($secondary-400, 0.5),
+        rgba($secondary-500, 0.3),
+        transparent),
+    radial-gradient(circle 164px at 47% 106%,
+        rgba($secondary-400, 0.5),
+        rgba($secondary-500, 0.3),
+        transparent),
+
+    radial-gradient(circle 197px at 43% 7%,
+        rgba($secondary-500, 0.5),
+        rgba($secondary-600, 0.3),
+        transparent),
+    radial-gradient(circle 164px at 83% -7%,
+        rgba($secondary-500, 0.5),
+        rgba($secondary-600, 0.3),
+        transparent),
+
+    radial-gradient(circle 197px at 43% 7%,
+        rgba($secondary-400, 0.5),
+        rgba($secondary-500, 0.3),
+        transparent),
+    radial-gradient(circle 164px at 83% -7%,
+        rgba($secondary-400, 0.5),
+        rgba($secondary-500, 0.3),
+        transparent),
+    $primary-800;
+    border-radius: rem(24px);
+    width: 100%;
+}
+
+.open-account-content {
+    padding: rem(32px) 0px;
+}
+
+.close-btn {
+    padding: rem(12px);
+    margin-left: rem(24px);
+}
+
+@include media-breakpoint-down(lg) {
+    .open-account-container-documents-validations {
+        background-color: $primary-800;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: rem(16px);
+        border-radius: rem(16px);
+        background:
+            radial-gradient(circle 231px at 84% 94%,
+                rgba($secondary-500, 0.5),
+                rgba($secondary-600, 0.3),
+                transparent),
+            radial-gradient(circle 200px at 56% 105%,
+                rgba($secondary-500, 0.5),
+                rgba($secondary-600, 0.3),
+                transparent),
+
+            radial-gradient(circle 251px at 29% 4%,
+                rgba($secondary-500, 0.5),
+                rgba($secondary-600, 0.3),
+                transparent),
+            radial-gradient(circle 174px at 51% 3%,
+                rgba($secondary-500, 0.5),
+                rgba($secondary-600, 0.3),
+                transparent),
+
+            $primary-800;
+        border-radius: rem(24px);
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .open-account-content {
+        padding: rem(24px) 0px;
+    }
+}
+
+
+
+

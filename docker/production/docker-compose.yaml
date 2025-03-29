@@ -1,0 +1,14 @@
+name: account-creation
+
+services:
+  app:
+    container_name: onboarding--account-creation
+    image: 636467442182.dkr.ecr.eu-west-1.amazonaws.com/nearsoft/onboarding-account-creation:latest
+    env_file: .env
+    networks:
+      - web
+
+networks:
+  web:
+    name: production
+    external: true

@@ -1,0 +1,43 @@
+@import './styles/bootstrap/index';
+@import './styles/fonts';
+@import './styles/btn';
+@import './styles/carrosselCard';
+@import './styles/openAccountMethods.scss';
+@import './styles//accordion';
+@import './styles/homepage-image';
+@import './styles/layout';
+@import './styles/homepage-container';
+@import './styles/error-pages';
+@import './styles/error-page-footer';
+@import './styles/text-inputs';
+@import './styles/check-box';
+@import './styles/links';
+@import './styles/pagination-btn';
+@import './styles/alerts';
+@import './styles/choose-card.scss';
+@import './styles/conditions-card';
+@import './styles/control-pdf-panel';
+@import './styles//avatar';
+@import './styles/multi-holder-card-info';
+@import './styles/loaders';
+@import './styles//switch';
+@import './styles/tags';
+
+@import './styles/sideNavStyles/nav-element';
+@import './styles/sideNavStyles/side-nav-layouts';
+@import './styles/sideNavStyles/open-account-content';
+
+@import './styles/openAccount/current-section';
+@import './styles/openAccount/contanct-validation';
+@import './styles//openAccount//account-presentation';
+@import './styles/openAccount/account-presentation-modal';
+@import './styles/openAccount/status-screens';
+@import './styles//openAccount/validation-documents-BG';
+@import './styles/openAccount/show-idcard-data';
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+

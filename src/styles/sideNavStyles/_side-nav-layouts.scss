@@ -1,0 +1,119 @@
+.side-nav-bg {
+    min-height: 100%;
+    border-radius: rem(24px);
+    padding: rem(24px);
+    background: 
+        radial-gradient(
+            circle 309px at 78% 92%, 
+            rgba($secondary-400, 0.3),
+            transparent 
+        ),
+        radial-gradient(
+            circle 193px at 89% 70%, 
+            rgba($secondary-400, 0.5),
+            rgba($secondary-500, 0.3),
+            transparent 
+        ),
+        radial-gradient(
+            circle 343px at 68% 95%, 
+            rgba($secondary-400, 0.9), 
+            rgba($secondary-500, 0.5),
+            transparent 
+        ),
+        $primary-800;
+}
+
+.logo-layout {
+    padding-bottom: rem(80px);
+    display: flex;
+    justify-content: center;
+    padding-top: rem(16px);
+}
+
+.principal-section {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: rem(16px);
+    min-height: calc(100vh - 430px);
+    justify-content: center;
+    
+}
+
+.side-nav-mobile {
+    // min-height: 100%;
+    position: absolute;
+    top: rem(96px);
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    padding: 0px rem(16px);
+}
+
+.side-nav-md {
+    width: rem(330px);
+}
+
+.side-nav {
+    top: rem(96px);
+    left: 0;
+    z-index: 90;
+}
+
+@include media-breakpoint-down(lg) {
+    .side-nav-bg{
+        min-height: calc(100vh - 120px);
+    }
+    .principal-section {
+        min-height: calc(100vh - 240px);
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .side-nav-bg {
+        background: 
+        radial-gradient(
+            circle 189px at 70% 87%, 
+            rgba($secondary-400, 0.5),
+            transparent 
+        ),
+        radial-gradient(
+            circle 159px at 94% 69%, 
+            rgba($secondary-400, 0.9),
+            rgba($secondary-500, 0.5),
+            transparent 
+        ),
+        radial-gradient(
+            circle 234px at 66% 88%, 
+            rgba($secondary-400, 0.9), 
+            rgba($secondary-500, 0.5),
+            transparent 
+        ),
+        $primary-800;
+
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .side-nav-bg {
+        background: 
+        radial-gradient(
+            circle 189px at 70% 87%, 
+            rgba($secondary-400, 0.5),
+            transparent 
+        ),
+        radial-gradient(
+            circle 159px at 94% 69%, 
+            rgba($secondary-400, 0.9),
+            rgba($secondary-500, 0.5),
+            transparent 
+        ),
+        radial-gradient(
+            circle 234px at 66% 88%, 
+            rgba($secondary-400, 0.9), 
+            rgba($secondary-500, 0.5),
+            transparent 
+        ),
+        $primary-800;
+    }
+} 

@@ -1,0 +1,64 @@
+.header-container  {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.header-content {
+    padding: rem(56px) 0px rem(24px);
+}
+
+.logo-company-footer {
+    width: rem(197.12px);
+    height: rem(40px); 
+
+    &.white {
+        svg path {
+            fill: $white;
+        }
+    } 
+}
+.logo-company {
+    width: rem(197.12px);
+    height: rem(40px);
+
+    &.white {
+        svg path {
+            fill: $white;
+        }
+    }
+}
+
+.logo-sm {
+    display: none;
+}
+
+.text-header {
+    padding-left: rem(24px);
+    padding-right: rem(142px)
+}
+
+@include media-breakpoint-down(md) {
+
+    .header-content {
+        padding: rem(24px) 0px rem(24px) rem(16px);
+    }
+    .logo-company {
+        width: rem(40.7px);
+        height: rem(32px);
+        margin-left: 0px;
+    }
+    .text-header {
+        padding: rem(12px) rem(16px);
+    }
+    .logo-md {
+        display: none;
+    }
+    .logo-sm {
+        display: block;
+    }
+    .logo-company-footer {
+        height: rem(24px);
+        margin-left: 0px;
+    }
+
+}

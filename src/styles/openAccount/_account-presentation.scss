@@ -1,0 +1,77 @@
+.account-presentation-card {
+    box-shadow: rem(0px) rem(4px) rem(16px) rem(4px) $shadow;
+    background-color: $white;
+    border-radius: rem(24px);
+}
+
+.account-presentation-img {
+    width: 100%;
+    object-fit: cover;
+    height: rem(160px);
+    border-radius: rem(24px);
+}
+
+.accounts-pagination {
+    padding-top: rem(24px);
+    display: flex;
+    gap: rem(12px);
+}
+
+::-webkit-scrollbar {
+    width: rem(10px);
+    height: rem(10px);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(230, 229, 229);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-100;
+    border-radius: rem(10px);
+} 
+
+@include media-breakpoint-up(md) {
+    .move-left-animation {
+        position: relative;
+        animation: moveLeft 1.3s forwards;
+    }
+    
+    @keyframes moveLeft {
+        from {
+            left: 200px;
+        }
+        to {
+            left: -0; 
+        }
+    }
+
+    .fade-in-animation {
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .account-presentation-card {
+        width: rem(255px);
+        flex: 0 0 auto;
+    }
+    .accounts-presentation-container  {
+        width: 100%; 
+        overflow-x: auto;
+        padding: rem(12px) rem(12px) rem(50px);        
+    }
+}
+
+

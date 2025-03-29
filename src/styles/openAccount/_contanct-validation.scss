@@ -1,0 +1,61 @@
+.OTP-img {
+    max-width: rem(360px);
+    height: rem(282.86px);
+    object-fit: contain;
+    width: 100%;
+}
+
+.OTP-input {
+    padding-top: rem(40px);
+}
+
+@include media-breakpoint-up(md) {
+    .animated-button {
+        &.up {
+            position: relative;
+            animation: moveUp 0.9s ease forwards;
+        }
+        &.down {
+            position: relative;
+            animation: moveDown 0.9s ease forwards;
+        }
+    }
+    
+    @keyframes moveUp {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-40px);
+        }
+    }
+     
+    @keyframes moveDown {
+        from {
+            transform: translateY(-40px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    .hide-send-OTP {
+        opacity: 0;
+        height: rem(42px);
+        padding-top: rem(24px);
+        transition: opacity 0.3s ease-in;
+    }
+
+}
+
+@include media-breakpoint-down(md) {
+    .OTP-img {
+        max-width: rem(228.09px);
+        height: rem(180px);
+        object-fit: contain;
+        width: 100%;
+    }
+    .hide-send-OTP {
+        height: rem(42px);
+    }
+}

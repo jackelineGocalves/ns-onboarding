@@ -1,0 +1,114 @@
+h1 {
+    font-weight: $font-weight-h1;
+    font-size: $font-size-h1;  
+    line-height: $line-height-h1;
+}
+
+h2 {
+    font-weight: $font-weight-h2;
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+}
+
+h3 {
+    font-weight: $font-weight-h3;
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+}
+
+h4 {
+    font-weight: $font-weight-h4;
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
+}
+
+h5 {
+    font-weight: $font-weight-h5;
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
+}
+
+body {
+    font-weight: $font-weight-body;
+    font-size: $font-size-body;
+    line-height: $line-height-body;
+}
+
+.btn-font {
+    font-weight: $font-weight-btn;
+    font-size: $font-size-btn;
+    line-height: $line-height-btn;
+}
+
+a {
+    font-weight: $font-weight-link;
+    font-size: $font-size-link;
+    line-height: $line-height-link;
+    text-decoration: none;
+}
+
+.caption {
+    font-weight: $font-weight-caption;
+    font-size: $font-size-caption;
+    line-height: $line-height-caption;
+}
+
+@include media-breakpoint-down(md) {
+
+    h1 {
+        font-weight: $font-weight-h1-rs;
+        font-size: $font-size-h1-rs;
+        line-height: $line-height-h1-rs;
+    }
+
+    h2 {
+        font-weight: $font-weight-h2-rs;
+        font-size: $font-size-h2-rs;
+        line-height: $line-height-h2-rs;
+    }
+
+    h3 {
+        font-weight: $font-weight-h3-rs;
+        font-size: $font-size-h3-rs;
+        line-height: $line-height-h3-rs;
+    }
+
+    h4 {
+        font-weight: $font-weight-h4-rs;
+        font-size: $font-size-h4-rs;
+        line-height: $line-height-h4-rs;
+    }
+
+    h5 {
+        font-weight: $font-weight-h5-rs;
+        font-size: $font-size-h5-rs;
+        line-height: $line-height-h5-rs;
+    }
+
+    body {
+        font-weight: $font-weight-body-rs;
+        font-size: $font-size-body-rs;
+        line-height: $line-height-body-rs;
+    }
+
+    .btn-font {
+        font-weight: $font-weight-btn-rs;
+        font-size: $font-size-btn-rs;
+        line-height: $line-height-btn-rs;
+    }
+
+    a {
+        font-weight: $font-weight-link-rs;
+        font-size: $font-size-link-rs;
+        line-height: $line-height-link-rs;
+        text-decoration: none;
+    }
+
+    .caption {
+        font-weight: $font-weight-caption-rs;
+        font-size: $font-size-caption-rs;
+        line-height: $line-height-caption-rs;
+    }
+}
+
+

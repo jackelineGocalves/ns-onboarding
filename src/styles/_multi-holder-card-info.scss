@@ -1,0 +1,46 @@
+.multi-holder-card {
+    border-radius: rem(20px);
+    padding: rem(20px);
+    box-shadow: rem(0px) rem(4px) rem(16px) rem(4px) $shadow;  
+    word-break: break-word;
+}
+
+.holder-contacts {
+    border-top: 1px solid $secondary-50;
+    width: calc(100% - rem(52px));
+}
+
+.trash-icon {
+    width: rem(32px);
+    height: rem(32px);
+    cursor: pointer;
+}
+
+.contacts-icons {
+    width: rem(16px);
+    height: rem(16px);
+}
+
+.holder-cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.multiholder-container  {
+    position: relative;
+    max-height: rem(832px);
+    overflow-y: auto;
+    padding: rem(12px);
+
+    //FireFox scrollbar
+    @supports not selector(::-webkit-scrollbar) {
+        scrollbar-color: $primary-100  transparent;
+    }
+
+    @include media-breakpoint-down(lg) {
+        max-height: rem(600px);
+    }
+    @include media-breakpoint-down(sm) {
+        max-height: calc(100vh - rem(332px));
+    }
+}

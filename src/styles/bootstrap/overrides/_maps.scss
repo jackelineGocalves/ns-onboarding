@@ -1,0 +1,25 @@
+@use 'sass:map';
+@import './colors';
+
+// Add Maps Overrides
+$theme-colors: (
+  'primary': $primary,
+  "secondary": $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+);
+
+$all-colors: map-merge-multiple($primarys, $secondarys, $dangers, $successes, $warnings, $infos);
+@each $page-color, $color in $all-colors {
+    .bgc-#{$page-color} {
+        background-color: $color;
+    }
+    .txt-#{$page-color} {
+        color: $color;
+    }
+    .border-#{$page-color} {
+        border: $color;
+    }
+}

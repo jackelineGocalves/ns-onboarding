@@ -1,0 +1,19 @@
+.link {
+    color: $secondary-600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    border: none;
+    background-color: transparent;
+
+    &:not(:disabled):hover {
+        color: $secondary-700 ;
+    }
+
+    &:not(:disabled):first-child:active {
+        color: $secondary-800;
+    }
+
+    &:disabled {
+        opacity: 50%;
+    }
+}

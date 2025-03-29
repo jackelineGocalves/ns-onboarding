@@ -1,0 +1,16 @@
+.full-width-img {
+    svg {
+        width: 100%;
+        max-height: rem(240px);
+    }
+}
+
+.presentation {
+    gap: rem(56px);
+    @include media-breakpoint-down(md) {
+        gap: rem(32px)
+    }
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,52 @@
+.control-panel {
+    background-color: $primary-800;
+    border-top-left-radius: rem(6px);
+    border-top-right-radius: rem(6px);
+    padding: rem(16px);
+    color: $white;
+    svg path {
+        stroke: $primary-500;
+    }
+}
+
+.modal-content {
+    height: 80%;
+}
+
+.pdf-card {
+    height: rem(600px);
+    border-bottom-left-radius: rem(20px);
+    border-bottom-right-radius: rem(20px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.pdf-card::-webkit-scrollbar {
+    display: none;
+}
+
+.pdf-reader {
+    padding: rem(12px) rem(18px);
+    overflow-x: scroll;
+}
+
+.pdf-reader::-webkit-scrollbar {
+    display: none;
+}
+
+.react-pdf__Page__canvas {
+    margin: auto;
+}
+.pdf-modal {
+    max-width: rem(800px);
+    height: 400px;
+}
+
+@include media-breakpoint-up(sm) {
+    .pdf-modal {
+        width: 70%;
+    }
+}
+
+

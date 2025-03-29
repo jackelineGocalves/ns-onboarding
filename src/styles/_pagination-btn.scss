@@ -1,0 +1,19 @@
+.pagination-btn{
+    height: rem(44px);
+    width: rem(44px);
+    border-radius: 50%;
+    border: 2px solid $primary-50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $font-weight-btn;
+    font-size: $font-size-btn;
+    line-height: $line-height-btn;
+    background-color: transparent;
+
+    &.active {
+        background-color: $secondary-50;
+        color: $secondary-600;
+        border: 2px solid $secondary-50;
+    }
+}

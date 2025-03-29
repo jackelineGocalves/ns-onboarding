@@ -1,0 +1,67 @@
+.choose-card {
+    background-color: $primary-50;
+    border-radius: rem(24px);
+    padding: rem(40px);
+    display: grid;
+    gap: rem(32px);
+    width: 100%;
+
+    &:hover {
+        background-color: $secondary-50;
+    }
+    &:first-child:active {
+        background-color: $secondary-200;
+    }
+}
+
+.choose-card-img {
+    width: 100%;
+    object-fit: contain;
+    max-width: rem(288px);
+    
+    path {
+        fill: $primary-900;
+    }
+}
+
+.duration {
+    height: rem(32px);
+    svg path {
+        stroke: $secondary-800;
+    }
+}
+
+.option-tag {
+    height: rem(16px);
+}
+
+
+@include media-breakpoint-down(md) {
+    .choose-card-img {
+        max-width: rem(220px);
+    }
+    .duration {
+        height: rem(40px);
+    }
+
+    .option-tag {
+        height: rem(24px);
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .choose-card-img {
+        max-width: rem(152px);
+    }
+    .choose-card { 
+        gap: rem(16px);
+        padding: rem(20px);
+    }
+    .duration {
+        height: rem(40px);
+    }
+
+    .option-tag {
+        height: rem(24px);
+    }
+}

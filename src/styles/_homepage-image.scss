@@ -1,0 +1,40 @@
+.homepage-img-container {
+    height: rem(320px);
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+    color: $white;
+}
+
+.homepage-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;  
+    border-radius: rem(24px);
+    filter : brightness(0.5); 
+}
+
+.homepage-img-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: rem(24px);
+
+}
+
+
+
+
+
+
+

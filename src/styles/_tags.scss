@@ -1,0 +1,30 @@
+.tag {
+    width: fit-content;
+    padding: rem(8px) rem(16px);
+    border-radius: rem(20px);
+
+    &.primary {
+        background-color: $secondary-50;
+        color: $secondary-900
+    }
+
+    &.secondary {
+        background-color: $primary-50;
+        color: $primary-800
+    }
+
+    &.danger {
+        background-color: $danger-50;
+        color: $danger-900;
+    }
+
+    &.warning {
+        background-color: $warning-50;
+        color: $warning-900;
+    }
+
+    &.info {
+        background-color: $info-50;
+        color: $info-900;
+    }
+}

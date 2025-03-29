@@ -1,0 +1,42 @@
+.current-section {
+    padding-top: rem(56px);
+}
+.current-section-title {
+    padding-bottom: rem(40px);
+    margin: 0;
+}
+.current-section-btns {
+    margin-top: rem(56px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem(56px);
+}
+
+.icon-24 {
+    width: rem(24px);
+    height: rem(24px);
+}
+
+@include media-breakpoint-down(md) {
+    .current-section{
+        min-height: calc(100vh - 184px);
+    }
+    .current-section-btns {
+        padding-bottom: 0px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .current-section{
+        min-height: calc(100vh - 168px);
+    }
+    .current-section{
+        padding-top: 0px;
+    }
+    .current-section-title {
+        padding-bottom: rem(24px);
+        margin: 0;
+    }
+}
+

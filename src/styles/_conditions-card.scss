@@ -1,0 +1,40 @@
+.condition-card {
+    // cursor: pointer;
+    border-radius: rem(20px);
+    padding: rem(20px);
+    box-shadow: rem(0px) rem(4px) rem(16px) rem(4px) $shadow;
+}
+
+.condition-icon {
+    width: rem(32px);
+    height: rem(32px);
+    box-sizing: content-box;
+
+    &.active {
+        path {
+            stroke: $secondary-400;
+        } 
+    }
+    
+    &.document {
+        background-color: $primary-50;
+        border-radius: 50%;
+        padding: rem(8px);
+        margin-right: rem(12px);
+        svg {
+            border-radius: 0;
+        }
+        path {
+            stroke: $primary-600 ;
+        } 
+
+        &.active {
+            background-color: $secondary-50;
+
+            path {
+                stroke: $secondary-400;
+            } 
+            
+        }
+    }
+}

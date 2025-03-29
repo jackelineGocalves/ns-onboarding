@@ -1,0 +1,40 @@
+.avatar {  
+    box-sizing: content-box;
+    width: rem(32px);
+    height: rem(32px);
+    
+    &.small {
+        width: rem(24px);
+        height: rem(24px);
+    }
+
+    &.active {
+        background-color: $secondary-50;
+        border-radius: 50%;
+        padding: rem(8px);
+        margin-right: rem(12px);
+
+        svg {
+            border-radius: 0;
+        }
+
+        path {
+            stroke: $secondary-400;
+        }
+    }
+
+    &.holder-active {
+        background-color: $secondary-100;
+        border-radius: 50%;
+        padding: rem(8px);
+        margin-right: rem(12px);
+    
+        svg {
+            border-radius: 0;
+        }
+    
+        path {
+            stroke: $secondary-600;
+        }
+    }
+}

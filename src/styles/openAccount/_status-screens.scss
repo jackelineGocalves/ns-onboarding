@@ -1,0 +1,11 @@
+.status-img {
+    max-width: rem(500px);
+    max-height: rem(392px);
+    min-height: rem(360px);
+}
+
+@include media-breakpoint-down(sm) {
+    .status-msg {
+        text-align: justify;
+    }
+}

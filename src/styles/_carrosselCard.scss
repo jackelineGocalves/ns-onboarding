@@ -1,0 +1,132 @@
+.carrossel-card {
+  position: relative;
+  background-color: $white;
+  border-radius: rem(16px);
+  box-shadow: rem(4px) rem(4px) rem(32px) rem(8px) $shadow;
+  box-shadow: rem(-4px) rem(-4px) rem(32px) rem(8px) $shadow;
+  overflow: hidden;
+  padding: rem(11px) 0px;
+  text-align: center;
+  cursor: pointer;
+
+  &.active {
+    background-color: $secondary-50;
+    box-shadow: none;
+    transition-duration: 1000ms;
+
+    &.active:hover{
+      background-color: $secondary-50;
+      box-shadow: none;
+
+      &.carrossel-card-number {
+        color: $secondary-100;
+      }
+    }
+
+    &.active .carrossel-card-number{
+      color: $secondary-100; 
+      transition-duration: 1000ms;
+    }
+  }
+
+  &:hover{
+    background-color: $primary-50;
+    box-shadow: none;
+    box-shadow: rem(4px) rem(4px) rem(32px) rem(8px) $shadow;
+  }
+}
+
+.carrossel-card-img {
+  position: relative;
+  padding:  0px rem(39px);
+  z-index: 1;
+}
+
+.carrossel-img {
+  max-height: rem(288px);
+  max-width: rem(288px);
+}
+
+.carrossel-card-content{
+  padding: rem(16px);
+  display: flex;
+  justify-content: center;
+}
+
+.carrossel-card-number {
+  position: absolute;
+  right: -7px;
+  top: -20px;
+  font-size: rem(140px);
+  line-height: rem(140px);
+  font-weight: bolder;
+  z-index: 0;
+  color: $primary-50;
+
+  &.first {
+    right: -16px
+  }
+
+  &:hover {
+    color: $primary-100;
+  }
+}
+
+.carrossel-card:hover .carrossel-card-number {
+  color: $primary-100;
+}
+
+.carrossel-index {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: rem(140px);
+  line-height: rem(140px);
+  font-weight: bolder;
+  z-index: -1;
+  color: $secondary-50;
+  right: -7px;
+  top: -20px;
+}
+
+.carrossel-content {
+  padding-top: rem(16px);
+
+}
+
+.carrossel-btns {
+  height: rem(60px);
+  margin-top: rem(32px);
+}
+
+@include media-breakpoint-down(md) {
+
+  .carrossel-card {
+    padding: 0px;
+  }
+
+  .carrossel-card-img {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .carrossel-index {
+    display: none;
+  }
+
+}
+
+@include media-breakpoint-down(lg) {
+  .carrossel-index {
+    display: none;
+  }
+  .carrossel-img {
+      max-width: rem(200px);
+      max-height: rem(200px);
+    }
+}
+
+
+

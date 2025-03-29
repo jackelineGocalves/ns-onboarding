@@ -1,0 +1,49 @@
+.accordion {
+    margin: 0px;
+    border-radius: rem(32px);
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    &.accordion-principal {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $success-100;
+        padding: rem(20px) rem(32px);
+
+        &:hover:not(.active, .accordion-content) {
+            background-color: $secondary-50;
+            border: 1px solid $secondary-500;
+            border-radius: rem(32px);
+        }
+
+        &.active{
+            background-color: $secondary-100;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top: 1px solid $secondary-500;
+            border-left: 1px solid $secondary-500;
+            border-right: 1px solid $secondary-500;
+        }
+        
+        svg path {
+            stroke: $secondary-500;
+        }  
+
+    }
+
+    &.accordion-content {
+        background-color: $secondary-50;
+        border-top-left-radius: 0px;
+        border-top-right-radius:  0px;
+        padding: rem(20px) rem(32px); 
+        border-bottom: 1px solid $secondary-500;
+        border-left: 1px solid $secondary-500;
+        border-right: 1px solid $secondary-500;
+    } 
+}
+
+.acordion-container {
+    p {
+        margin-bottom: 0;
+    }
+}
